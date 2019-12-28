@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MapActivity">
+
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment">
+    </fragment>
+
+    <RelativeLayout
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="90dp"
+        android:background="@drawable/border"
+        android:elevation="10dp"
+        android:focusable="auto">
+
+
+        <ImageView
+            android:id="@+id/magnify"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_action_name" />
+
+        <EditText
+            android:id="@+id/zipcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@id/magnify"
+            android:autofillHints=""
+            android:background="@null"
+            android:hint="@string/zipHint"
+            android:imeOptions="actionDone|actionSearch"
+            android:shadowColor="#F80C0C0C"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="40dp"
+        android:background="#6AAFD0"
+        android:fontFamily="@font/rajdhani_semibold"
+        android:onClick="onClick"
+        android:padding="20dp"
+        android:shadowColor="#D2030303"
+        android:text="@string/findButton"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="327dp"
+        android:layout_marginTop="15dp"
+        android:background="#6AAFD0"
+        android:fontFamily="@font/rajdhani_semibold"
+        android:onClick="geoLocate"
+        android:shadowColor="#D2030303"
+        android:text="Search"
+        android:textSize="18sp" />
+
+</RelativeLayout>

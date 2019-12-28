@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380sp"
+    android:layout_height="wrap_content"
+    android:background="#080F0F0F"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="380sp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/reviewer_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rajdhani_medium"
+            android:paddingStart="15sp"
+            android:text="Rating"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/review_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginEnd="15sp"
+            android:fontFamily="@font/rajdhani_medium"
+            android:foregroundGravity="right"
+            android:gravity="right"
+            android:paddingStart="15sp"
+            android:text="Time"
+            android:textSize="13sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="380sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/reviewer_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15sp"
+            android:padding="3dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/reviewer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:fontFamily="@font/rajdhani_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="15sp"
+            android:paddingTop="3sp"
+            android:paddingBottom="3sp"
+            android:text="Name"
+            android:textColor="#0F0F0F"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="380sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5sp"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/review_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rajdhani_medium"
+            android:paddingStart="15sp"
+            android:textSize="13sp" />
+    </TableRow>
+
+</LinearLayout>
