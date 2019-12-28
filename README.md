@@ -1,5 +1,7 @@
 ### This is the CS160 Programming 2B assignment readme file.
 
+## The API key used in the project is depreciated & needs to be replaced with an updated google api key locally to make google maps & google places api requests.
+
 
 Outline of Views & Features:
 # Views:
